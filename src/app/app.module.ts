@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     SearchFormComponent,
     NotFoundComponent,
+    NavbarComponent,
 
   ],
   imports: [
