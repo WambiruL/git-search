@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import {NgProgressHttpClientModule} from '@ngx-progressbar/http-client';
 import {NgProgressModule} from '@ngx-progressbar/core';
 import { DatePipe } from './date.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DatePipe } from './date.pipe';
     RepositoriesComponent,
     UserComponent,
     SearchFormComponent,
-    DatePipe
+    DatePipe,
+    HighlightDirective
 
   ],
   imports: [
