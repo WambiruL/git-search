@@ -3,8 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { User } from './user';
 import { Repos } from './repos';
 import { Injectable } from '@angular/core';
-import { resolve } from 'dns';
-import { rejects } from 'assert';
+
 
 @Injectable({
   providedIn: 'root'
@@ -46,5 +45,4 @@ export class UserserviceService {
       )
     });
   }
-
 }
