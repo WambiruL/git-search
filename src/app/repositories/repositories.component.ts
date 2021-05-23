@@ -1,3 +1,4 @@
+import { Repos } from './../repos';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repositories.component.css']
 })
 export class RepositoriesComponent implements OnInit {
+  repo: Repos;
 
   constructor() { }
 
