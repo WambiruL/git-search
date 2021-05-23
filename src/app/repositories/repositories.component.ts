@@ -1,3 +1,4 @@
+import { UserserviceService } from './../userservice.service';
 import { Repos } from './../repos';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class RepositoriesComponent implements OnInit {
   repo: Repos;
 
-  constructor() { }
+  constructor(public repoService: UserserviceService) { }
 
   ngOnInit(): void {
   }
