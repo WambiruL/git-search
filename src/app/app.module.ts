@@ -13,6 +13,7 @@ import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
 import {NgProgressHttpClientModule} from '@ngx-progressbar/http-client';
 import {NgProgressModule} from '@ngx-progressbar/core';
+import { DatePipe } from './date.pipe';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {NgProgressModule} from '@ngx-progressbar/core';
     NavbarComponent,
     RepositoriesComponent,
     UserComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    DatePipe
 
   ],
   imports: [
