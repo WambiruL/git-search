@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,6 +10,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { UserComponent } from './user/user.component';
+import { FormsModule } from '@angular/forms';
+import {NgProgressHttpClientModule} from '@ngx-progressbar/http-client';
+import {NgProgressModule} from '@ngx-progressbar/core';
 
 
 @NgModule({
@@ -19,11 +23,16 @@ import { UserComponent } from './user/user.component';
     NavbarComponent,
     RepositoriesComponent,
     UserComponent,
+    SearchFormComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
 
   ],
   providers: [],
