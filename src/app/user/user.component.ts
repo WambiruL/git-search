@@ -1,5 +1,5 @@
 import { UserserviceService } from './../userservice.service';
-import { Repos } from './../repos';
+import { Repo } from '../repo';
 import { User } from './../user';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  user: User;
-  repo: Repos;
+  user!: User;
+  repo!: Repo;
 
   constructor(public myService:UserserviceService, private repoService:UserserviceService) {
   }
-    searchs(searchName){
+    searchs(searchName: string){
       this.myService.searchUser(searchName).then(
         (success)=>{
           this.user=this.myService.foundUser;

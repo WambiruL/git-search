@@ -1,3 +1,4 @@
+import { UserserviceService } from './userservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,8 +14,9 @@ import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
 import {NgProgressHttpClientModule} from '@ngx-progressbar/http-client';
 import {NgProgressModule} from '@ngx-progressbar/core';
-import { DatePipe } from './date.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { DatePipe } from './date.pipe';
+
 
 
 @NgModule({
@@ -25,9 +27,8 @@ import { HighlightDirective } from './highlight.directive';
     NavbarComponent,
     RepositoriesComponent,
     UserComponent,
-    SearchFormComponent,
-    DatePipe,
-    HighlightDirective
+    HighlightDirective,
+    DatePipe
 
   ],
   imports: [
@@ -37,9 +38,8 @@ import { HighlightDirective } from './highlight.directive';
     HttpClientModule,
     NgProgressModule.forRoot(),
     NgProgressHttpClientModule
-
   ],
-  providers: [],
+  providers: [UserserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
